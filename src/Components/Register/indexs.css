@@ -1,0 +1,181 @@
+  
+  
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #92ea66, #852be0);
+}
+ 
+.login-content {
+    width: 400px;
+    padding: 40px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+ 
+.heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+ 
+.form-con {
+    margin: 20px;
+}
+
+ 
+.label-design {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+ 
+.input-design {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input-design:focus {
+    border-color: #5e72e4;
+}
+
+ 
+.error-message {
+    color: #e74c3c;
+    margin-top: 5px;
+}
+ 
+.button-design{
+    width: 40%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #5e72e4;
+    color: #fff;
+}
+
+ 
+
+ .loginbutton{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #079f2d;
+    color: #fff;
+    margin-top: 20px;
+    width: 40%;
+} 
+
+.button-design:hover , .loginbutton:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 10px;
+}
+
+ 
+.side-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height:  593.4px;
+    left: 50px;
+}
+ 
+
+.buttoncontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+ 
+.signup-link{
+    color: green;
+}
+
+ 
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 2s ease;
+}
+
+@keyframes slideIN1 {
+    0% {
+        transform: translateX(400%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.slide-in1{
+   animation: slideIN1 2s ease;
+}
+
+ 
+@media (max-width: 768px) {
+    .login-content {
+        width: 80%;
+    }
+    .side-container{
+        height: 613px;
+    }
+    .button-design:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100px;
+        border-radius: 10px;
+    }
+     
+    .button-design{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:500px) {
+     .side-container{
+        display: none;
+
+     }
+     .login-content{
+        width: 100%;
+        margin: 30px;
+     }
+     .button-design:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100px;
+        border-radius: 10px;
+    }
+    .para{
+         font-size: 10px;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
