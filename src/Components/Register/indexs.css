@@ -1,5 +1,7 @@
   
-  
+body{
+    margin: 0px;
+}
 .login-container {
     display: flex;
     justify-content: center;
@@ -135,6 +137,18 @@
 }
 .slide-in1{
    animation: slideIN1 2s ease;
+}
+
+@media (max-width: 800px) {
+    .side-container{
+        height: 594px;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-container{
+        height: 613px;
+    }
 }
 
  
