@@ -2,11 +2,13 @@
 body{
     margin: 0px;
 }
+
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
     background: linear-gradient(135deg, #92ea66, #852be0);
 }
  
@@ -94,9 +96,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    height:  593.4px;
-    left: 50px;
 }
  
 
@@ -122,6 +121,7 @@ body{
         transform: translateX(0);
     }
 }
+
 
 .slide-in {
     animation: slideIn 2s ease;
@@ -155,6 +155,7 @@ body{
 @media (max-width: 740px) {
     .login-content {
         width: 80%;
+        
     }
     .side-container{
         height: 613px;
@@ -170,6 +171,8 @@ body{
         width: 100%;
         margin-bottom: 10px;
     }
+
+
 }
 
 @media (max-width:500px) {

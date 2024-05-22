@@ -2,6 +2,8 @@ import { useState ,useEffect} from "react";
 import axios from 'axios';
 import './indexx.css'
 import { Link } from "react-router-dom";
+import Cookies from "js-cookie";
+ 
 function Login() {
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
@@ -13,9 +15,10 @@ function Login() {
             setAnimationCompleted(true);
     }, []);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        
+        setPassword('')
+        setEmail('')
         if (!email.trim()) {
             setErrorEmail("Email is required");
             return;
@@ -32,9 +35,17 @@ function Login() {
         }
         
          
-        axios.post('http://localhost:3000/login', { email, password })
-            .then(res => console.log(res.data))
-            .catch(err => console.log(err));
+        const res = await axios.post('https://react-node-backend-code-for-login.onrender.com/login', { email, password })
+        console.log(res.data.token)
+        if(res.data.token){
+            Cookies.set("jwt_token", res.data.token, {
+                expires: 30
+              });
+             
+        }
+            setPassword('')
+            setEmail('')
+
     }
 
     return (
