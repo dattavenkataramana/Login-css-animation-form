@@ -8,6 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: -40px;
     background: linear-gradient(135deg, #667eea, #764ba2);
 }
 

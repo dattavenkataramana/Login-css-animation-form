@@ -119,7 +119,7 @@ function Register() {
     const navigate = useNavigate();
 
     const handleclick = () => {
-        navigate('/');
+        navigate('/login');
     };
 
     const handleSubmit = async (e) => {
@@ -158,7 +158,7 @@ function Register() {
             console.log(res.data);
 
             if (res.data.status === "success") {
-                navigate('/');
+                navigate('/login');
             } else {
                 setError(res.data.message);
             }
