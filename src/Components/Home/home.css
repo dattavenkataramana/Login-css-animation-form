@@ -157,26 +157,32 @@
   color: white;
 }
 
-button {
-  background: linear-gradient(90deg, #47b5fa, #feb47b);
+.buttons-of-click {
   border: none;
+  background: none;
+  color:  black;
   padding: 10px 20px;
   font-size: 1.2rem;
-  border-radius: 25px;
-  color: white;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
-  outline: none;
+  position: relative;
+  /* transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; */
+  /* outline: none; */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  animation: pulse 2s infinite;
+  /* animation: pulse 2s infinite; */
 }
 
-button:hover {
+/* 
+.buttons-of-click:hover{
+   border: 1px solid black;
+   color: black;
+} */
+/* button:hover {
   background: linear-gradient(90deg, #feb47b, #47b5fa);
   transform: scale(1.1);
-}
+} */
 
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
     transform: scale(1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -190,7 +196,7 @@ button:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
 }  
-/* new */
+  */
 
 .data-dispalying-container {
   padding: 20px;
@@ -198,21 +204,21 @@ button:hover {
 
 .items-arrange-in-horizontally {
   display: flex;
-  justify-content:  space-evenly;
+  justify-content:   flex-start;
   flex-wrap: wrap;
 }
 
-.items-arrange-in-horizontally button {
-  margin: 10px;
+.items-arrange-in-horizontally , .buttons-of-click {
+  margin: 5px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  /* transition: background-color 0.3s ease; */
 }
 
-.items-arrange-in-horizontally button:hover {
+/* .items-arrange-in-horizontally button:hover {
   background-color: #f0f0f0;
-}
+} */
 
 .data-displays {
   display: flex;
