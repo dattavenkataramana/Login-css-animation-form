@@ -3,14 +3,14 @@ import axios from 'axios';
 import './indexx.css'
 import { Link } from "react-router-dom";
 import Cookies from "js-cookie";
- 
+import { useNavigate } from "react-router-dom";
 function Login() {
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
     const [errorEmail, setErrorEmail] = useState('');
     const [errorPassword, setErrorPassword] = useState('');
     const [animationCompleted, setAnimationCompleted] = useState(false);
-
+    const navigate =  useNavigate()
     useEffect(() => {
             setAnimationCompleted(true);
     }, []);
@@ -33,7 +33,6 @@ function Login() {
             setErrorEmail("Invalid email format");
             return;
         }
-        
          
         const res = await axios.post('https://react-node-backend-code-for-login.onrender.com/login', { email, password })
         console.log(res.data.token)
@@ -41,6 +40,7 @@ function Login() {
             Cookies.set("jwt_token", res.data.token, {
                 expires: 30
               });
+              navigate('/products')
              
         }
             setPassword('')

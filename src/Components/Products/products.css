@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    margin: 20px;
 }
 
 .product-item {
@@ -67,6 +68,7 @@
 @media screen and (max-width: 768px) {
     .product-list {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        
     }
 
     .image-height {
@@ -89,6 +91,7 @@
 @media screen and (max-width: 576px) {
     .product-list {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+         
     }
 
     .image-height {
@@ -138,3 +141,8 @@
     }
   }
   
+  @media screen and (min-width: 540px) {
+    .heading1 {
+        font-size: 8px;
+    }
+  }

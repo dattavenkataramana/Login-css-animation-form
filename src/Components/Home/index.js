@@ -7,6 +7,7 @@ import Header from '../Header';
 import './home.css';
 
 function Home() {
+  
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [filterData, setFilterData] = useState([]);
