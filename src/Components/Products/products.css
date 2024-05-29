@@ -63,7 +63,18 @@
     background-color: #0056b3;
 }
 
-
+.no-results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     
+     
+}
+.image-size{
+    height: 100%;
+    width: 100%;
+}
 
 @media screen and (max-width: 768px) {
     .product-list {

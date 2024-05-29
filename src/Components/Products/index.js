@@ -156,8 +156,8 @@ const Products = ({ products, searchQuery, onSelectProduct }) => {
             </div>
           ))
         ) : (
-          <div style={{display:"flex", justifyContent:"center", alignItems:"center"}} className="no-results">
-            <img style={{height:'100vh'}} src="https://i.ibb.co/1fDDnHc/404-not-found.jpg" alt="No results found" />
+          <div  className="no-results">
+            <img className='image-size' src="https://i.ibb.co/1fDDnHc/404-not-found.jpg" alt="No results found" />
           </div>
         )}
       </div>
@@ -166,3 +166,6 @@ const Products = ({ products, searchQuery, onSelectProduct }) => {
 };
 
 export default Products;
+
+
+
