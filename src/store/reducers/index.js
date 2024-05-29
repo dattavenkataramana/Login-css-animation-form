@@ -1,30 +1,4 @@
  
-// import { FETCH_PRODUCTS_SUCCESS, SELECT_PRODUCT, ADD_TO_CART, REMOVE_FROM_CART } from '../actions';
-
-// const initialState = {
-//     products: [],
-//     selectedProduct: null,
-//     cart: [],
-// };
-
-// export default function productReducer(state = initialState, action) {
-//     switch (action.type) {
-//         case FETCH_PRODUCTS_SUCCESS:
-//             return { ...state, products: action.payload };
-//         case SELECT_PRODUCT:
-//             return { ...state, selectedProduct: action.payload };
-//         case ADD_TO_CART:
-//             return { ...state, cart: [...state.cart, action.payload] };
-//         case REMOVE_FROM_CART:
-//             return {
-//                 ...state,
-//                 cart: state.cart.filter(item => item.id !== action.payload.id),
-//             };
-//         default:
-//             return state;
-//     }
-// }
-
 
 import { FETCH_PRODUCTS_SUCCESS, SELECT_PRODUCT, ADD_TO_CART, REMOVE_FROM_CART } from '../actions';
 
