@@ -68,3 +68,70 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+E-commerce  
+This project is an e-commerce product display application built using React. It allows users to browse through a list of products, filter them by category, search for specific products, and add them to the cart. The application also includes user authentication using JWT tokens and redirects unauthenticated users to the login page.
+
+Features
+Product Listing: Display a list of products fetched from an API.
+Search: Filter products based on search queries.
+Category Filter: Filter products by different categories.
+Add to Cart: Users can add products to their shopping cart.
+User Authentication: Redirect users to the login page if they are not authenticated.
+Responsive Design: The application is fully responsive and works on all devices, including desktops, tablets, and smartphones.
+Technologies Used
+React: JavaScript library for building user interfaces.
+Redux: State management library for React.
+React Router: Library for routing in React applications.
+Axios: HTTP client for making API requests.
+js-cookie: Library for handling cookies in the browser.
+CSS: For styling the application.
+Installation
+Clone the repository:
+
+sh
+Copy code
+git clone https://github.com/your-username/e-commerce-app.git
+cd e-commerce-app
+Install dependencies:
+
+sh
+Copy code
+npm install
+Start the development server:
+
+sh
+Copy code
+npm start
+The application will be available at http://localhost:3000.
+
+Usage
+Home Page: Displays a welcome message and navigation to the registration page for new users.
+Product Page: Displays a list of products with options to filter by category and search by name or description.
+Add to Cart: Click the "Add To Cart" button on any product to add it to the shopping cart.
+Authentication: Users must be logged in to view the products. If not authenticated, they will be redirected to the login page.
+Code Structure
+Components
+Home.js: The homepage component that displays a welcome message and navigation to the registration page.
+Products.js: The product listing component that displays products, allows filtering by category, and adding to the cart.
+CSS
+home.css: Styles specific to the home component.
+products.css: Styles specific to the products component.
+State Management
+actions.js: Contains Redux actions for adding products to the cart.
+reducers.js: Contains Redux reducers for managing the state of the cart and products.
+API
+Products are fetched from https://fakestoreapi.com/products.
+Responsive Design
+The application uses CSS media queries to ensure that it is fully responsive and works well on all devices, including:
+
+Desktops
+Tablets
+Smartphones
+ 
+
+Acknowledgements
+Fake Store API for providing the product data.
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
